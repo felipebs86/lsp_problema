@@ -24,6 +24,7 @@ public abstract class Funcionario
     /**
      * Taxa percentual na qual o salário anualizado será reajustado
      * @param taxa valor maior que 0 e menor ou igual a 10.
+     * 
      */
     public abstract void reajustar( BigDecimal taxa);
 }
