@@ -49,4 +49,11 @@ public class FuncionarioTest
         Funcionario funcionario = new Voluntario("Leo", new BigDecimal("1000000"));
         assertEquals( new BigDecimal("0.00"), funcionario.getSalarioAnual());
     }
+    
+    @Test
+    public void voluntarioEhFuncionarioTest(){
+    	Funcionario funcionario = new Voluntario("Felipe", new BigDecimal("1200.00"));
+    	funcionario.reajustar(new BigDecimal("10"));
+    	assertEquals(funcionario.getSalarioAnual(), new BigDecimal("1320.00"));
+    }
 }
